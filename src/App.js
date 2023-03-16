@@ -19,8 +19,10 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    //prod: https://prophetgpt-1-v0497515.deta.app/
+    //prod: https://prophetgpt-1-v0497515.deta.app
+    //dev: http://localhost:8000
     fetch(`https://prophetgpt-1-v0497515.deta.app/prompts/?question=${text}`, {
+      credentials: "include",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
