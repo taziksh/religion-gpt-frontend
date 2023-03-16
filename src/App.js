@@ -16,7 +16,7 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch(`http://localhost:8000/prompts/?question=${text}`, {
+    fetch(`https://prophetgpt-1-v0497515.deta.app/prompts/?question=${text}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
