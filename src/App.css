@@ -15,10 +15,17 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  flex-direction: row;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
 }
 
 .input-box {
   min-width: 600px;
+  border: 1.5px solid black;
 }
 
 .box {
