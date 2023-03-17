@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
+const prod_url = "https://prophetgpt-1-v0497515.deta.app";
+const dev_url = "http://localhost:8000";
+
 function App() {
   const [text, setText] = useState("");
   const [textAreaValues, setTextAreaValues] = useState({
@@ -19,10 +22,9 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    //prod: https://prophetgpt-1-v0497515.deta.app
-    //dev: http://localhost:8000
-    fetch(`https://prophetgpt-1-v0497515.deta.app/prompts/?question=${text}`, {
+    fetch(`${prod_url}/prompts/?question=${text}`, {
       credentials: "include",
+      mode: "cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
