@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
-const prod_url = "https://prophetgpt-1-v0497515.deta.app";
+const prod_url = "http://18.219.255.166";
 const dev_url = "http://localhost:8000";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
         "accept": "application/json",
-        "Cookie": "deta_app_token=S6DMT0cYNhQBTnLiaU6kTbjlYxrYWX51PInb4L0F5dYL1aVM"
+        // "Cookie": "deta_app_token=S6DMT0cYNhQBTnLiaU6kTbjlYxrYWX51PInb4L0F5dYL1aVM"
       },
       // body: JSON.stringify({ topic: text })
     })
