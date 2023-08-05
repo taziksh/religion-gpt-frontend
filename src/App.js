@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
-const prod_url = "http://18.219.255.166";
+const prod_url = "https://prophet-gpt-backend-production.up.railway.app";
 const dev_url = "http://localhost:8000";
 
 function App() {
