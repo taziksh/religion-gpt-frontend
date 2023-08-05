@@ -50,8 +50,8 @@ function App() {
   return (
     <div className="parent">
       <>
-        <h1 className="text-4xl">📖 amenGPT</h1>
-        <h3 className="italic">Daily questions, divine answers</h3>
+        <h1 className="text-4xl">📖 ReligionGPT</h1>
+        <h3 className="italic">Everyday questions, divine answers</h3>
         <form className="form" onSubmit={handleSubmit}>
           <textarea className="textarea-lg input-box" onChange={handleChange} value={text} />
           <button className="btn submit-button" type="submit">Submit</button>
