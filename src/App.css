@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "IowanOldStyleRoman";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/src/fonts/IowanOldStyleBT-Roman.otf") format("opentype");
+}
+
 .App {
   text-align: center;
 }
@@ -8,6 +15,7 @@
   justify-content: center;
   gap: 50px;
   align-items: center;
+  background-color: #FFFBE8;
 }
 
 .container {
@@ -42,8 +50,18 @@
   position: absolute;
   bottom: 10px;
   right: 5px;
+  background-color: #03EB97;
+  text-transform: lowercase;
 }
 
 .form {
   position: relative;
+}
+
+.title {
+  font-family: "IowanOldStyleRoman";
+}
+
+.subtitle {
+  font-family: "IowanOldStyleRoman";
 }
