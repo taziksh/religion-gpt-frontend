@@ -1,9 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const prod_url = "https://prophet-gpt-backend-production.up.railway.app";
 const dev_url = "http://localhost:8000";
+
+const Form = (text, handleSubmit, handleChange) => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  })
+
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <input type="text" className="textarea-lg input-box" onChange={handleChange} value={text} autofocus />
+      <button className="btn submit-button" type="submit">Submit</button>
+    </form>
+  )
+}
 
 function App() {
   const [text, setText] = useState("");
@@ -14,6 +31,13 @@ function App() {
     textarea4: "",
     textarea5: "",
     textarea6: "",
+  })
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   })
 
   function handleChange(event) {
@@ -53,9 +77,10 @@ function App() {
         <h1 className="title text-4xl">📖 ReligionGPT</h1>
         <h3 className="subtitle italic">Everyday questions, divine answers</h3>
         <form className="form" onSubmit={handleSubmit}>
-          <textarea className="textarea-lg input-box" onChange={handleChange} value={text} />
+          <input ref={inputRef} type="text" className="textarea-lg input-box" onChange={handleChange} value={text} autofocus />
           <button className="btn submit-button" type="submit">Submit</button>
         </form>
+        {/* <Form text handleSubmit handleChange/> */}
         <div className="container">
           <label className="label">
           🕌 islam
