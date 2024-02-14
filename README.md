@@ -1,3 +1,7 @@
+# Religion GPT
+
+<img width="1025" alt="Screenshot 2024-02-13 at 11 59 57 PM" src="https://github.com/taziksh/religion-gpt-frontend/assets/35576188/5682feab-eac6-4570-976d-db2284b6dcd1">
+
 # Create React App
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
@@ -29,3 +33,4 @@ Launches the test runner in the interactive watch mode. See the section about [r
 Builds the app for production to the `build` folder.
 
 It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+
